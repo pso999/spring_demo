@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--配置UserServiceImpl对象-->
+    <!--bean中的name属性可以有多个值，多个值可以使用逗号分隔开.(name属性不是必须的)-->
+    <bean id="userService" name="name1,name2,name3" class="com.example.demo.service.userServiceImpl"/>
+</beans>

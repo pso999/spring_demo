@@ -1,20 +1,19 @@
 package com.example.demo.config;
 
-import com.example.demo.Dao.userDaoImpl;
-import com.example.demo.service.userService;
-import com.example.demo.service.userServiceImpl;
+import com.example.demo.Dao.UserDaoImpl;
+import com.example.demo.service.UserServiceImpl;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class beansConfig {
     @Bean
-    public userDaoImpl userDao() {
-        return new userDaoImpl();
+    public UserDaoImpl userDao() {
+        return new UserDaoImpl();
     }
     @Bean
-    public userServiceImpl userService() {
-        userServiceImpl userService = new userServiceImpl();
+    public UserServiceImpl userService() {
+        UserServiceImpl userService = new UserServiceImpl();
         userService.setUserDao(userDao());
         return userService;
     }

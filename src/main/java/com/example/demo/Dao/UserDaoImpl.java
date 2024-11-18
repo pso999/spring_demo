@@ -1,12 +1,13 @@
 package com.example.demo.Dao;
 
-import org.springframework.stereotype.Component;
+import com.example.demo.entity.User;
 import org.springframework.stereotype.Service;
 
 @Service
-public class userDaoImpl implements userDao {
+public class UserDaoImpl implements UserDao {
     @Override
-    public void initUserDao(){
+    public void addUserDao(User user) {
+
         System.out.println("InitUserDao:");
     }
 

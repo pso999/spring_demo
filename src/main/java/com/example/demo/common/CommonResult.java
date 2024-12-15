@@ -1,4 +1,4 @@
-package com.example.demo.common.CommonResult;
+package com.example.demo.common;
 
 import com.example.demo.enums.CommonResultCodeEnum;
 import io.swagger.annotations.ApiModel;

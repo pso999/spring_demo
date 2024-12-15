@@ -1,4 +1,4 @@
-package com.example.demo.Dao.File;
+package com.example.demo.dto.file;
 
 import lombok.Builder;
 import lombok.Data;
@@ -8,6 +8,6 @@ import org.springframework.web.multipart.MultipartFile;
 @Builder
 public class UploadFileArgsDTO {
     private MultipartFile file;
-    private String topicID;
-    private String userID;
+    private Integer topicID;
+    private Integer userID;
 }
